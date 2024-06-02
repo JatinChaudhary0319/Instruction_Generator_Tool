@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Real-time Instructions Generator</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script type="text/javascript" src="promptGeneratorChatGPT.js"></script>
+        <script type="text/javascript" src="imageGeneratorDallE.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <div id="intro">
+            <div id="header">
+                <h1>The Smartinator</h1>
+                <p>Instructions - Generator</p>
+                <p id="description">Enter a prompt for the instructions you would like to generate.<br>
+                    Examples include "How to use instagram" or "How to make maggi".</p>
+            </div>
+            <div id="submission">
+                <input type="text" id="input" name="fname" placeholder="Enter a prompt...">
+                <button id="submit" type="submit" onclick="submit()">Generate</button>
+            </div>
+        </div>
+        <div id="instructions-grid"></div>
+        <p id="page-info">This generator is powered by the OpenAI API using models ChatGPT 3.5 and DALL-E 3.</p>
+    </body>
+</html>
