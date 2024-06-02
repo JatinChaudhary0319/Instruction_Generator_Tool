@@ -58,11 +58,16 @@ class Main {
 
     for (let i = 0; i < responseDetail.length; i++) {
       for (let j = 0; j < window.images.length; j++) {
-        if (window.images[j][1] == i) {
+        if (window.images[j][0]?.data && window.images[j][1] == i) {
           this.addInstruction(
             responseDetail[i],
             window.images[j][0].data[0].url
           );
+        }else {
+          this.addInstruction(
+            responseDetail[i],
+            ""
+          )   
         }
       }
     }
@@ -96,6 +101,7 @@ class Main {
     imageElement.className = "image";
     const actualImage = document.createElement("img");
     actualImage.src = imageUrl;
+    actualImage.alt = "Broken";
     actualImage.style.width = "512px";
     actualImage.style.aspectRatio = "square";
     imageElement.appendChild(actualImage);
