@@ -19,8 +19,6 @@ class Main {
       .replace(/(\r\n|\n|\r )/gm, "")
       .replace(/"/g, "'");
 
-    console.log(responseDetail);
-
     window.open_ai_response = null;
     this.detailedImageInstructions = window.ChatGPT.getDetailedImageDescription(
       input,
@@ -61,7 +59,6 @@ class Main {
     for (let i = 0; i < responseDetail.length; i++) {
       for (let j = 0; j < window.images.length; j++) {
         if (window.images[j][1] == i) {
-          console.log(responseDetail[i], window.images[j][0].data[0].url);
           this.addInstruction(
             responseDetail[i],
             window.images[j][0].data[0].url

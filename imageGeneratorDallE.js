@@ -1,6 +1,6 @@
 class DallE {
   constructor() {
-    this.key = "vn0surm0Ff{K6rPrID}K\v<qf:oRW6EoenIMrdFYE}3{\DD:Pn9vVpdj"
+    this.key = "um/rtql/EezJ5qOqHC|J[u;pe9nQV5DndmHLqcEXD|2z[CC9Om8uUoci"
   }
 
   async getImage(prompt_text, input, i) {
@@ -15,7 +15,7 @@ class DallE {
     this.usable = "";
     for(let i = 0; i < this.key.length; i++)
     {
-        this.usable += String.fromCharCode(this.key.charCodeAt(i) - 3);
+        this.usable += String.fromCharCode(this.key.charCodeAt(i) - 2);
     }
 
     xhr.setRequestHeader("Authorization", "Bearer " + this.usable);

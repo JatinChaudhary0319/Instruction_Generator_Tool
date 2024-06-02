@@ -1,6 +1,6 @@
 class ChatGPT {
     constructor() { 
-        this.key = "vn0surm0Ff{K6rPrID}K\v<qf:oRW6EoenIMrdFYE}3{\DD:Pn9vVpdj"
+        this.key = "um/rtql/EezJ5qOqHC|J[u;pe9nQV5DndmHLqcEXD|2z[CC9Om8uUoci"
     }
 
     async generateText(prompt_text, model = "gpt-3.5-turbo-instruct", max_tokens = 1250, temperature = 0.85) {
@@ -15,7 +15,7 @@ class ChatGPT {
         this.usable = "";
         for(let i = 0; i < this.key.length; i++)
         {
-            this.usable += String.fromCharCode(this.key.charCodeAt(i) - 3);
+            this.usable += String.fromCharCode(this.key.charCodeAt(i) - 2);
         }
 
         xhr.setRequestHeader("Authorization", "Bearer " + this.usable);
