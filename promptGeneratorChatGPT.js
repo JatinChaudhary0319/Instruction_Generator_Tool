@@ -40,7 +40,7 @@ class ChatGPT {
     }
 
     async getDetailed(prompt) {
-        let editedPrompt = "Write detailed steps on how: " + prompt + ", it should be strictly be in provided format where all the steps are started with word [Step] number and are separated with this semi-colon, such that 'Step 1: abc;Step 2: pqr;Step 3: xyz'.";
+        let editedPrompt = "Write detailed procedure within five steps on how: " + prompt + ", it should be strictly be in provided format where all the steps are started with word [Step] number and are separated with this semi-colon, such that 'Step 1: abc;Step 2: pqr;Step 3: xyz'.";
 
         const resdata = await this.generateText(editedPrompt);
         return resdata;
