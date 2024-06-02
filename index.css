@@ -97,10 +97,12 @@ p {
 }
 
 .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 512px;
     height: 512px;
     background: #52392F;
-    grid-area: image;
     box-shadow: 10px 0px 10px;
     border-radius: 0px 25px 25px 0px;
 }
@@ -133,6 +135,11 @@ p {
 
 #instructions-grid{
     padding: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-item{
@@ -145,3 +152,47 @@ p {
     font-size: 15px;
     padding: 30px;
 }
+
+.animated-loader{ 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: flex; 
+    align-items: center; 
+      
+  } 
+  /* Creating the dots */ 
+  span{ 
+    height: 15px; 
+    width: 15px; 
+    border-radius: 50%; 
+    background-color: #FFFAE7; 
+    animation: loading 1s linear infinite; 
+  } 
+  /* Creating the loading animation*/ 
+  @keyframes loading { 
+    0%{ 
+     transform: translateX(0); 
+    } 
+    25%{ 
+     transform: translateX(15px); 
+    } 
+    50%{ 
+     transform: translateX(-15px); 
+    } 
+    100%{ 
+     transform: translateX(0); 
+    } 
+      
+  } 
+   
+ span:nth-child(1){ 
+   animation-delay: 0.1s; 
+ } 
+ span:nth-child(2){ 
+   animation-delay: 0.2.5s; 
+ } 
+ span:nth-child(3){ 
+   animation-delay: 0.4s; 
+ }
