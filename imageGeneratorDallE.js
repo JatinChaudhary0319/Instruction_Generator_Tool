@@ -10,6 +10,7 @@ class DallE {
     xhr.open("POST", url);
 
     xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 
     this.usable = "";
     for(let i = 0; i < this.key.length; i++)

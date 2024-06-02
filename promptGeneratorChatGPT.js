@@ -3,13 +3,14 @@ class ChatGPT {
         this.key = "vn0surm0Ff{K6rPrID}K\v<qf:oRW6EoenIMrdFYE}3{\DD:Pn9vVpdj"
     }
 
-    async generateText(prompt_text, model = "text-davinci-003", max_tokens = 1250, temperature = 0.85) {
+    async generateText(prompt_text, model = "gpt-3.5-turbo-instruct", max_tokens = 1250, temperature = 0.85) {
         var url = "https://api.openai.com/v1/completions";
 
         var xhr = new XMLHttpRequest();
         xhr.open("POST", url);
 
         xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 
         this.usable = "";
         for(let i = 0; i < this.key.length; i++)
