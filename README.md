@@ -1,6 +1,6 @@
 # Smartinator
 
-## Tech Stack used
+- ### Tech Stack used
 	<center>
 		<table>
 			<tbody>
