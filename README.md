@@ -12,7 +12,7 @@
 					<td width="25%" align="center">
 						<span><strong>CSS</strong></span><br/>
 						<img height="64px" width="64px" src="https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3.png">
-					</td
+					</td>
           				<td width="25%" align="center">
 						<span><strong>Openai</strong></span><br/>
 						<img height="64px" width="64px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F022%2F227%2F351%2Foriginal%2Fopenai-chatgpt-logo-icon-free-png.png&f=1&nofb=1&ipt=a7ab6ff713004117835fa60a42ca3a9490a091755d1379ae3980cb5de5579c08&ipo=images">
